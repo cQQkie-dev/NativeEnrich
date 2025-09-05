@@ -178,7 +178,7 @@ public class NativeEnrich extends GhidraScript {
         }
 
         // If an existing archive isn't found, open it from the file.
-        ResourceFile jniArchiveFile = Application.getModuleDataFile("NativeEnrich", "jni_all.gdt");
+        ResourceFile jniArchiveFile = Application.getModuleDataFile("NativeEnrich", "nativeenrich_jni_all.gdt");
         Archive jniArchive = service.openArchive(jniArchiveFile.getFile(true), false);
         return jniArchive.getDataTypeManager();
     }
